@@ -1,0 +1,51 @@
+{
+	"Category1": {
+		"Name": "Nobel Prize Winners",
+
+		"Answer1": "A1",
+		"Answer2": "A2",
+		"Answer3": "A3",
+		"Answer4": "A4",
+		"Answer5": "A5"
+	},
+
+	"Category2": {
+		"Name": "Three Letter Agencies",
+
+		"Answer1": "A1",
+		"Answer2": "A2",
+		"Answer3": "A3",
+		"Answer4": "A4",
+		"Answer5": "A5"
+	},
+
+	"Category3": {
+		"Name": "Like",
+
+		"Answer1": "A1",
+		"Answer2": "A2",
+		"Answer3": "A3",
+		"Answer4": "A4",
+		"Answer5": "A5"
+	},
+
+	"Category4": {
+		"Name": "Reply Companies",
+
+		"Answer1": "A1",
+		"Answer2": "A2",
+		"Answer3": "A3",
+		"Answer4": "A4",
+		"Answer5": "A5"
+	},
+
+	"Category5": {
+		"Name": "Ports",
+
+		"Answer1": "A1",
+		"Answer2": "A2",
+		"Answer3": "A3",
+		"Answer4": "A4",
+		"Answer5": "A5"
+	}
+}
