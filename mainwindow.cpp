@@ -145,6 +145,11 @@ void MainWindow::on_button_500_4_clicked()
 }
 
 void MainWindow::getAnswer(int value, int category) {
-    Game NewGame;
-    NewGame.getAnswer(value, category);
+    QString valueString = QString::number(value);
+    QString categoryString = QString::number(category);
+
+    // Game NewGame;
+    // NewGame.getAnswer(value, category);
+    ui->label_answer->setText("foobar:" + valueString + ", " + categoryString);
+    ui->stackedWidget->setCurrentWidget(ui->page_answer);
 }

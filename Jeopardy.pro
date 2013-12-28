@@ -23,5 +23,4 @@ FORMS    += mainwindow.ui
 
 QMAKE_CXXFLAGS += -std=c++11
 
-OTHER_FILES += \
-    stylesheet.css
+OTHER_FILES +=
