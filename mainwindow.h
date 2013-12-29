@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include<QKeyEvent>
 
 namespace Ui {
 class MainWindow;
@@ -45,6 +46,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     void getAnswer(int value,int category);
+    void keyPressEvent(QKeyEvent* e);
 };
 
 #endif // MAINWINDOW_H

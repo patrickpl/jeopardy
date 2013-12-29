@@ -1,6 +1,7 @@
 #include "game.h"
 #include <QMessageBox>
 #include <QString>
+#include <QColor>
 
 Game::Game()
 {
@@ -15,3 +16,16 @@ void Game::getAnswer(int value, int category)
     msgBox.setText("The document has been modified." + valueString);
     msgBox.exec();
 }
+
+QColor Game::getPlayer1Color() {
+    return QColor(255,0,0);
+}
+
+QColor Game::getPlayer2Color() {
+    return QColor(0,255,0);
+}
+
+QColor Game::getPlayer3Color() {
+    return QColor(0,255,255);
+}
+

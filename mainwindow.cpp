@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "game.h"
+#include <QMessageBox>
+#include <QColor>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -148,8 +150,34 @@ void MainWindow::getAnswer(int value, int category) {
     QString valueString = QString::number(value);
     QString categoryString = QString::number(category);
 
-    // Game NewGame;
-    // NewGame.getAnswer(value, category);
     ui->label_answer->setText("foobar:" + valueString + ", " + categoryString);
     ui->stackedWidget->setCurrentWidget(ui->page_answer);
 }
+
+void MainWindow::keyPressEvent(QKeyEvent *keyevent){
+    Game game;
+    QPalette Pal(palette());
+     if (keyevent->key()==Qt::Key_1) {
+         Pal.setColor(QPalette::Background, game.getPlayer1Color());
+     } else if (keyevent->key()==Qt::Key_2) {
+         Pal.setColor(QPalette::Background, game.getPlayer2Color());
+     } else if (keyevent->key()==Qt::Key_3) {
+         Pal.setColor(QPalette::Background, game.getPlayer3Color());
+     }
+     ui->label_answer->setAutoFillBackground(true);
+     ui->label_answer->setPalette(Pal);
+     ui->label_answer->show();
+}
+/*
+void MainWindow::keyPressEvent(QKeyEvent* e) {
+    QPalette Pal(palette());
+    Pal.setColor(QPalette::Background, QColor(255,0,0));
+    Pal = ui->label_answer->palette();
+    ui->label_answer->setAutoFillBackground(true);
+    ui->label_answer->setPalette(Pal);
+    ui->label_answer->show();
+    // QMessageBox msgBox;
+    // msgBox.setText("The document has been modified." + e->text());
+    // msgBox.exec();
+}
+*/

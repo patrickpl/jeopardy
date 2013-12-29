@@ -10,6 +10,9 @@ class Game : public QObject
 public:
     Game();
     void getAnswer(int, int);
+    QColor getPlayer1Color();
+    QColor getPlayer2Color();
+    QColor getPlayer3Color();
 };
 
 #endif // GAME_H
