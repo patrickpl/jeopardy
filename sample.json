@@ -1,0 +1,85 @@
+{
+	"Category1": {
+		"Name": "Nobel Prize Winners",
+
+		"100": "A1",
+		"200": "A2",
+		"300": "A3",
+		"400": "A4",
+		"500": "A5"
+	},
+
+	"Category2": {
+		"Name": "Three Letter Agencies",
+
+		"100": "A1",
+		"200": "A2",
+		"300": "A3",
+		"400": "A4",
+		"500": "A5"
+	},
+
+	"Category3": {
+		"Name": "Like",
+
+		"100": "A1",
+		"200": "A2",
+		"300": "A3",
+		"400": "A4",
+		"500": "A5"
+	},
+
+	"Category4": {
+		"Name": "Reply Companies",
+
+		"100": "A1",
+		"200": "A2",
+		"300": "A3",
+		"400": "A4",
+		"500": "A5"
+	},
+
+	"Category5": {
+		"Name": "Ports",
+
+		"100": "A1",
+		"200": "A2",
+		"300": "A3",
+		"400": "A4",
+		"500": "A5"
+	},
+
+	"Settings": {
+		"Player1": {
+			"Color": "255, 0, 0",
+			"Name": "Player1Name"
+		},
+		"Player2": {
+			"Color": "0, 255, 0",
+			"Name": "Player2Name"
+		},
+		"Player3": {
+			"Color": "0, 0, 255",
+			"Name": "Player3Name"
+		}
+	}
+
+	"Results": {
+		"Category1" : {
+			"300" : [
+			{
+				"Player": "Player1",
+				"Points": "-300"
+			},
+			{
+				"Player": "Player2",
+				"Points": "-300"
+			},
+			{
+				"Player": "Player1",
+				"Points": "300"
+			}
+			]
+		}
+	}
+}
