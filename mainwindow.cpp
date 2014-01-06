@@ -163,6 +163,8 @@ void MainWindow::keyPressEvent(QKeyEvent *keyevent){
          Pal.setColor(QPalette::Background, game.getPlayer2Color());
      } else if (keyevent->key()==Qt::Key_3) {
          Pal.setColor(QPalette::Background, game.getPlayer3Color());
+     } else if (keyevent->key()==Qt::Key_9) {
+         ui->stackedWidget->setCurrentWidget(ui->page_board);
      }
      ui->label_answer->setAutoFillBackground(true);
      ui->label_answer->setPalette(Pal);
